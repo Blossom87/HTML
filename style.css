@@ -1,0 +1,57 @@
+body {
+    width: 100vw;
+}
+
+.audioPlayer {
+    background-color: rgb(255, 0, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.audioFunctions {
+    background-color: green;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 5%;
+}
+
+.audioInfo {
+    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.audioSearch {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainPage {
+    background-color: bisque;
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.leftsideControl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.albumPage {
+    background-color: green;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* justify-content: space-between; */
+}
+
+@media only screen and (max-width: 991px) {
+
+    .albumPage {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

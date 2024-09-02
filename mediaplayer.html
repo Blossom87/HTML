@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="audioPlayer">
+        <div class="audioFunctions">
+            <button type="button" id="btnPrevious">Précédent</button>
+            <button type="button" id="btnPlay">Lecture</button>
+            <button type="button" id="btnNext">Suivant</button>
+            <button type="button" id="volumeDown">Volume -</button>
+            <input id="volumeSlider" type="range" value="50" min="0" max="100">
+            <button type="button" id="volumeUp">Volume +</button>
+            <audio id="mediaplayer" src="MP3/Blue_Skies.mp3" preload="metadata" loop></audio>
+        </div>
+        <div class="audioInfo">
+            <p class="title">Song Title</p>
+            <p class="artist">Artist</p>
+            <div class="duration">
+                <input id="progression" type="range" value="50" min="0" max="100">
+            </div>
+        </div>
+        <div class="audioSearch">
+            <form action="#">
+                <input type="text" placeholder="Search" name="search">
+                <button>
+                    <i class="fa fa-search"> XD </i>
+                </button>
+        </div>
+    </div>
+    <div class="mainPage">
+        <div class="leftsideControl">
+            <label>Music</label>
+            <label>Vidéos</label>
+            <label>Podcasts</label>
+        </div>
+        <div class="albumPage">
+            <figure class="album1">
+                <img src="img/340/1.jpg" alt="Placeholder kitteh">
+                <figcaption>Placeholder</figcaption>
+            </figure>
+            <figure class="album2">
+                <img src="img/340/2.jpg" alt="Placeholder kitteh">
+                <figcaption>Placeholder</figcaption>
+            </figure>
+            <figure class="album3">
+                <img src="img/340/3.jpg" alt="Placeholder kitteh">
+                <figcaption>Placeholder</figcaption>
+            </figure>
+            <figure class="album4">
+                <img src="img/340/4.jpg" alt="Placeholder kitteh">
+                <figcaption>Placeholder</figcaption>
+            </figure>
+            <figure class="album5">
+                <img src="img/340/5.jpg" alt="Placeholder kitteh">
+                <figcaption>Placeholder</figcaption>
+            </figure>
+            <figure class="album6">
+                <img src="img/340/6.jpg" alt="Placeholder kitteh">
+                <figcaption>Placeholder</figcaption>
+            </figure>
+            <figure class="album7">
+                <img src="img/340/7.jpg" alt="Placeholder kitteh">
+                <figcaption>Placeholder</figcaption>
+            </figure>
+        </div>
+
+    </div>
+    <script src="song.js"></script>
+    <script src="audioPlayer.js"></script>
+</body>
+
+</html>
